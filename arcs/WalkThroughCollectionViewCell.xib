@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Y50-iB-mwf" customClass="WalkThroughCollectionViewCell" customModule="arcs" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="263" height="376"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="263" height="376"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ja-Ci-itv">
+                        <rect key="frame" x="10" y="0.0" width="243" height="376"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOg-oL-Mss">
+                                <rect key="frame" x="24.5" y="62" width="194" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMD-Tg-diI">
+                                <rect key="frame" x="61" y="273" width="121.5" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="View More">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arcs" translatesAutoresizingMaskIntoConstraints="NO" id="UEs-zz-d8t">
+                                <rect key="frame" x="46.5" y="83" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="MZm-nx-QyT"/>
+                                    <constraint firstAttribute="height" constant="150" id="bAO-51-Bpw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IOg-oL-Mss" firstAttribute="top" secondItem="7Ja-Ci-itv" secondAttribute="top" constant="62" id="AVp-gb-FLW"/>
+                            <constraint firstItem="UEs-zz-d8t" firstAttribute="top" secondItem="IOg-oL-Mss" secondAttribute="bottom" constant="21" id="GgL-QU-8cf"/>
+                            <constraint firstItem="WMD-Tg-diI" firstAttribute="centerX" secondItem="7Ja-Ci-itv" secondAttribute="centerX" id="LOi-ik-AM5"/>
+                            <constraint firstItem="WMD-Tg-diI" firstAttribute="width" secondItem="7Ja-Ci-itv" secondAttribute="width" multiplier="0.5" id="OGs-Ex-wjM"/>
+                            <constraint firstItem="IOg-oL-Mss" firstAttribute="centerX" secondItem="7Ja-Ci-itv" secondAttribute="centerX" id="d3s-Ii-Psq"/>
+                            <constraint firstItem="WMD-Tg-diI" firstAttribute="top" secondItem="UEs-zz-d8t" secondAttribute="bottom" constant="40" id="n2W-un-ono"/>
+                            <constraint firstItem="IOg-oL-Mss" firstAttribute="width" secondItem="7Ja-Ci-itv" secondAttribute="width" multiplier="0.8" id="uZu-Jk-IVF"/>
+                            <constraint firstItem="UEs-zz-d8t" firstAttribute="centerX" secondItem="7Ja-Ci-itv" secondAttribute="centerX" id="zb7-wD-RFn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="7Ja-Ci-itv" firstAttribute="top" secondItem="Y50-iB-mwf" secondAttribute="top" id="8Cm-IO-4qb"/>
+                <constraint firstAttribute="bottom" secondItem="7Ja-Ci-itv" secondAttribute="bottom" id="Bke-ST-yo3"/>
+                <constraint firstItem="7Ja-Ci-itv" firstAttribute="leading" secondItem="Y50-iB-mwf" secondAttribute="leading" constant="10" id="Tqx-wl-ggz"/>
+                <constraint firstItem="7Ja-Ci-itv" firstAttribute="centerX" secondItem="Y50-iB-mwf" secondAttribute="centerX" id="q7j-nU-wrb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Z2o-ze-Cx0"/>
+            <size key="customSize" width="263" height="376"/>
+            <connections>
+                <outlet property="cntVIew" destination="7Ja-Ci-itv" id="CO7-t9-Jtx"/>
+                <outlet property="ibTitle" destination="IOg-oL-Mss" id="uDj-SS-30j"/>
+                <outlet property="sponsorLogo" destination="UEs-zz-d8t" id="j8e-6z-MBI"/>
+                <outlet property="viewButton" destination="WMD-Tg-diI" id="tjE-Nb-6OJ"/>
+            </connections>
+            <point key="canvasLocation" x="-10.4" y="96.251874062968525"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arcs" width="384" height="384"/>
+    </resources>
+</document>

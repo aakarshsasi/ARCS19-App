@@ -1,0 +1,6 @@
+framework module Pods_arcs {
+  umbrella header "Pods-arcs-umbrella.h"
+
+  export *
+  module * { export * }
+}
